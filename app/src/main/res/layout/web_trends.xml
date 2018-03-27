@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/web_news_trends"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+
+        <!--新闻动态图片-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_xinwendongtai"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <!--新闻动态文字-->
+        <TextView
+            android:id="@+id/web_yuansuogonggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新闻动态"
+            android:layout_marginLeft="43dp"
+            android:textSize="@dimen/font_title_main"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_title_main"
+            />
+
+        <LinearLayout
+            android:id="@+id/news_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <!--更多文字-->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/font_title_minor"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/font_title_minor"
+                />
+            <!--右箭头-->
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:background="@drawable/ic_arrow_right"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <cn.xiaocool.dezhischool.view.NoScrollListView
+        android:id="@+id/web_news_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </cn.xiaocool.dezhischool.view.NoScrollListView>
+</LinearLayout>

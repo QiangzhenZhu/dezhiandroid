@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="第一节课"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="语文"
+        android:gravity="right"/>
+</LinearLayout>

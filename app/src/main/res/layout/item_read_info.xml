@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_read_info_iv_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_load_ing"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/item_read_info_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="林乐成"
+            android:textSize="@dimen/font_title_main"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"/>
+    </RelativeLayout>
+</LinearLayout>

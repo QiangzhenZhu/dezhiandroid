@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.xiaocool.dezhischool.activity.FivePublicActivity">
+
+    
+    <cn.xiaocool.dezhischool.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:id="@+id/web_five_homework"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/homework_public"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_title_main"
+                    android:textColor="@color/white"
+                    android:text="学校作业"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_youjiantou"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/web_five_kecheng"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/kecheng_public"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_title_main"
+                    android:textColor="@color/white"
+                    android:text="课程"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_youjiantou"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/web_five_keshi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/keshi_public"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_title_main"
+                    android:textColor="@color/white"
+                    android:text="课时"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_youjiantou"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/web_five_qimojiance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/qimojiance_public"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_title_main"
+                    android:textColor="@color/white"
+                    android:text="期末检测"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_youjiantou"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/web_five_jiejiari"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/jiejiari_public"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_title_main"
+                    android:textColor="@color/white"
+                    android:text="节假日"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_youjiantou"
+                    />
+
+            </RelativeLayout>
+            
+            
+            
+        </LinearLayout>
+        
+        
+        
+        
+    </cn.xiaocool.dezhischool.view.ReboundScrollView>
+    
+</RelativeLayout>

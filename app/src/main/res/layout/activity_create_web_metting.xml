@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="cn.xiaocool.dezhischool.activity.CreateWebMetting">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@mipmap/meeting_subject"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="会议主题"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_meeting_subject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:maxLines="1"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView31" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#DBDBDB"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@mipmap/meeting_content"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="会议内容"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <EditText
+                android:id="@+id/et_meeting_content"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:maxLines="5"
+                android:textSize="12sp"
+                android:hint="@string/meeting_content_himt"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.176"
+                app:layout_constraintStart_toEndOf="@+id/textView32" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/rl_meeting_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/meeting_location_green"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="会议室"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_meeting_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="left"
+                    android:text="选择会议室"
+                    android:textColor="#DBDBDB"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/metting_more" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="#DBDBDB" />
+
+            <RelativeLayout
+                android:id="@+id/rl_metting_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/meeting_start"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="开始时间"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_meeting_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="left"
+                    android:text="选择开始时间"
+                    android:textColor="#DBDBDB"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/metting_more" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="#DBDBDB" />
+
+            <RelativeLayout
+                android:id="@+id/rl_metting_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/meeting_end"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="结束时间"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meeting_end_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="left"
+                    android:text="选择结束时间"
+                    android:textColor="#DBDBDB"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/metting_more" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="#DBDBDB" />
+
+            <RelativeLayout
+                android:id="@+id/rl_metting_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/text_meeting_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/meeting_people_green"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="参会人员"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/meeting_people_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="9"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="选择参会人员"
+                    android:ellipsize="end"
+                    android:textColor="#DBDBDB"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/metting_more" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="#DBDBDB" />
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:id="@+id/rl_metting_moderator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/meeting_peoplel_moderator"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="会议主持人"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_metting_moderator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="选择会议主持人"
+                    android:ellipsize="end"
+                    android:textColor="#DBDBDB"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_moderator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/metting_more" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/publish_metting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/publish_meeting_buttong_drawable"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="发布会议"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/iv_loading" />
+
+</android.support.constraint.ConstraintLayout>

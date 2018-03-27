@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_foot_rg">
+        <RadioButton
+            android:textColor="@color/main_tab_bottom_text"
+            android:drawableTop="@drawable/main_home_selector"
+            android:id="@+id/main_tab_home"
+            android:text="@string/main_first_name"
+            android:checked="true"
+            style="@style/main_foot_tab_rb"
+            />
+        <RadioButton
+            android:textColor="@color/main_tab_bottom_text"
+            android:id="@+id/main_tab_sort"
+            android:drawableTop="@drawable/main_second_selector"
+            android:text="@string/main_second_name"
+            style="@style/main_foot_tab_rb" />
+        <RadioButton
+            android:textColor="@color/main_tab_bottom_text"
+            android:id="@+id/main_tab_quick"
+            android:drawableTop="@drawable/main_third_selector"
+            android:text="@string/main_third_name"
+            style="@style/main_foot_tab_rb" />
+        <RadioButton
+            android:textColor="@color/main_tab_bottom_text"
+            android:id="@+id/main_tab_mine"
+            android:drawableTop="@drawable/main_four_selector"
+            android:text="@string/main_four_name"
+            style="@style/main_foot_tab_rb" />
+    </RadioGroup>
+
+</RelativeLayout>

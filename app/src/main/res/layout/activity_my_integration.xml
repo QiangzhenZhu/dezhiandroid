@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main_gray"
+    tools:context=".activity.MyIntegrationActivity">
+    <cn.xiaocool.dezhischool.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/themeColor">
+                <TextView
+                    android:id="@+id/activity_my_integration_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="460"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="50dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前积分"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/activity_my_integration_tv_number"
+                    android:textSize="@dimen/font_title_main"/>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_10"></include>
+            <cn.xiaocool.dezhischool.view.NoScrollListView
+                android:id="@+id/activity_my_integration_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/bg_main_gray"
+                android:dividerHeight="0.5dp">
+            </cn.xiaocool.dezhischool.view.NoScrollListView>
+        </LinearLayout>
+    </cn.xiaocool.dezhischool.view.ReboundScrollView>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+    <ExpandableListView
+        android:id="@+id/fragment_teacher_elv_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/bg_main_gray"/>
+</LinearLayout>

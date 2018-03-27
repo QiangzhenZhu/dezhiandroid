@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/title_bg_color">
+    <ImageView
+
+        android:layout_marginLeft="15dp"
+        android:id="@+id/title_layout_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/back"/>
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="标题"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/whilte"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/title_layout_rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="设置"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/whilte"
+        android:layout_marginRight="8dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_layout_rightImage"
+        android:layout_gravity="center"
+        android:src="@drawable/setting"
+        android:layout_margin="5dp"
+        />
+
+
+</LinearLayout>

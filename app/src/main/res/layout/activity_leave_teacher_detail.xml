@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_teacher_add_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@mipmap/logo" />
+
+                    <TextView
+                        android:id="@+id/tv_child_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/iv_profile"
+                        android:text="杨继飞" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_child_name"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/tv_child_name"
+                        android:text="原因"
+                        android:textColor="#ff5f5f"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sumbit_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_child_name"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/iv_profile"
+                        android:text="2018-01-01 00:00"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/leave_text_view"
+                        android:text="待批准"
+                        android:textColor="@color/whilte"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_sumbit_time"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/iv_profile"
+                        android:maxLines="2"
+                        android:text="由于感冒不能上学，请假三天" />
+
+                    <com.jaeger.ninegridimageview.NineGridImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/nine_grid_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_leave_reason"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/iv_profile"
+                        app:imgGap="4dp"
+                        app:showStyle="fill" />
+                    <TextView
+                        android:id="@+id/shenpiyijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nine_grid_iv"
+                        android:layout_toRightOf="@id/iv_profile"
+                        android:layout_marginTop="16dp"
+                        android:text="审批意见"
+                        android:textColor="#333333" />
+                    <TextView
+                        android:id="@+id/tv_approval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="同意请假，好好养病，早日返校"
+                        android:layout_toRightOf="@id/iv_profile"
+                        android:layout_below="@id/shenpiyijian"
+                        android:layout_marginTop="4dp"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="36dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/shenpilaoshi"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="审批老师:"
+                            android:textSize="8sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_approval_teacher_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="李鑫"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/time"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_leave_begin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="18-01 08:00"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/time"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_leave_over"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="18-01 08:00"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:background="#F5F5F5"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="1dp">
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_leave_teacher_add"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll_examine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/leave_detail_teacher"></include>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+
+                <TextView
+                    android:id="@+id/bt_refused"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:background="@drawable/ask_leave_teacher_drawable"
+                    android:text="驳回"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/bt_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:background="@drawable/ask_leave_teacher_drawable_agree"
+                    android:text="同意"
+                    android:textColor="#ffffff"></TextView>
+
+                <TextView
+                    android:id="@+id/bt_resumption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:background="@drawable/ask_leave_teacher_drawable_resumption"
+                    android:text="销假"
+                    android:textColor="#ffffff" />
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

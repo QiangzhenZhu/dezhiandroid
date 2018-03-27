@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="355dp"
+    android:layout_height="80dp">
+
+    <cn.xiaocool.dezhischool.ui.MettingInfoLabel
+        android:id="@+id/metting_label_rv"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </cn.xiaocool.dezhischool.ui.MettingInfoLabel>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="183.5dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="#FF666666"
+        app:layout_constraintStart_toEndOf="@+id/metting_label_rv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="16.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="4dp"
+        android:drawableRight="@mipmap/more"
+        android:text="详情"
+        android:textColor="#FF14C56A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/meeting_location"
+        android:text="第一会议室"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:drawablePadding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/metting_label_rv"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:drawableLeft="@mipmap/meeting_people"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:text="24人"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:drawableLeft="@mipmap/konw_people"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:text="16人"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+</android.support.constraint.ConstraintLayout>

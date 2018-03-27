@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/jiantou"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_jiantouyou"/>
+        <TextView
+            android:id="@+id/tvGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/themeColor"
+            android:textSize="16sp"
+            android:text="No data" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/chbGroup"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:background="@drawable/checkbox_bg2"
+                android:focusable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

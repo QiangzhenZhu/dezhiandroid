@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/metting_search"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:imeOptions="actionSearch"
+        android:hint="请输入关键字"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:background="@drawable/search_metting_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_meeting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metting_search"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/iv_loading"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_meeting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:text="会议切换"
+        app:layout_constraintBottom_toBottomOf="@+id/metting_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/metting_search"
+        app:layout_constraintTop_toTopOf="@+id/metting_search" />
+</android.support.constraint.ConstraintLayout>

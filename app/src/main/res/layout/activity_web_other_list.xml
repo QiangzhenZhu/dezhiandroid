@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_gray"
+    tools:context="cn.xiaocool.dezhischool.activity.WebOtherListActivity">
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/web_list_swip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/web_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_main_gray"
+            android:dividerHeight="0.5dp">
+        </ListView>
+
+
+    </com.andview.refreshview.XRefreshView>
+</RelativeLayout>

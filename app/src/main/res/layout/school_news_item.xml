@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <cn.xiaocool.dezhischool.view.RoundImageView
+            android:id="@+id/item_sn_head_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/hyx_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_sn_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_nick_name"
+                android:textSize="@dimen/font_nick_name"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/item_sn_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_time_gray"
+                    android:textSize="@dimen/font_time_main"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/item_sn_delet"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/font_time_gray"
+                    android:textSize="@dimen/font_read"
+                    android:visibility="gone"
+                    android:text="删除"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_line_half"/>
+
+    <RelativeLayout
+        android:id="@+id/tecxt_homwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_sn_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myhomework_title"
+            android:layout_centerVertical="true"
+            android:lineSpacingMultiplier="1.2"
+            android:text="由于今天天气原因"
+            android:textColor="@color/font_content_gray"
+            android:textSize="@dimen/font_content_main"
+            android:textIsSelectable="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/item_sn_onepic"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop" />
+
+        <cn.xiaocool.dezhischool.view.NoScrollGridView
+            android:id="@+id/item_sn_gridpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@color/white"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_layout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_sn_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已阅读0"
+                android:textColor="@color/font_read_gray"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>-->
+
+
+    <include layout="@layout/divider_line_10" />
+
+</LinearLayout>

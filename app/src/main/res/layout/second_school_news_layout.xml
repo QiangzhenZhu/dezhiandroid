@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:id="@+id/second_rl_school_news"
+    android:background="@color/white">
+
+
+    <!--信息群发左边的小图标-->
+    <ImageView
+        android:id="@+id/sn_iv_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/xuexiaoxiaoxi"/>
+    <!--文字-->
+    <TextView
+        android:id="@+id/sn_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/sn_iv_img"
+        android:text="学校消息"
+        android:textColor="@color/font_title_main"
+        android:textSize="@dimen/font_title_main"
+        />
+    <!--文字下面介绍-->
+
+    <TextView
+        android:id="@+id/sn_tv_mirror_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sn_tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/sn_iv_img"
+        android:textColor="@color/font_title_minor"
+        android:textSize="@dimen/font_title_minor"
+        android:text="学校消息"
+        />
+
+
+    <include layout="@layout/divider_line_half"/>
+
+</RelativeLayout>

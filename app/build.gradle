@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
+    defaultConfig {
+        applicationId "cn.xiaocool.dezhischool"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 26
+        versionName "1.2"
+        ndk { abiFilters "armeabi", "armeabi-v7a" }
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    productFlavors {
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    implementation 'com.android.support:support-vector-drawable:27.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //增加这一句
+    compile files('libs/volley.jar')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaySdk-20160825.jar')
+    compile files('libs/jpush-android-2.1.9.jar')
+    //TODO imageview lunbo show
+    //TODO dialog to show list
+    //todo img select
+    //todo refresh
+    //compile project(':wechatRecoderVideoLibrary')
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    compile 'com.android.support:support-v4:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.baoyz.actionsheet:library:1.1.7'
+    compile 'com.lzy.widget:view-core:0.2.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'cn.finalteam:galleryfinal:1.4.6'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.youth.banner:banner:1.4.1'
+    compile 'me.drakeet.materialdialog:library:1.3.1'
+    compile 'com.github.valuesfeng:androidpicturepicker:1.0.0'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.5.5'
+    compile 'fm.jiecao:jiecaovideoplayer:4.8.3'
+    compile 'com.7heaven.widgets:segmentcontrol:1.14'
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.allenliu.versionchecklib:library:2.0.2'
+    compile 'com.jcodecraeer:xrecyclerview:1.5.9'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+    compile 'com.github.bumptech.glide:glide:4.5.0'
+    compile 'com.jaeger.ninegridimageview:library:1.0.2'
+    compile 'info.hoang8f:android-segmented:1.0.6'
+    compile 'com.github.youngkaaa:circleview:0.1.0'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.1.0'
+}

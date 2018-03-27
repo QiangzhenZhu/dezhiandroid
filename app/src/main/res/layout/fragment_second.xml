@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main_gray">
+
+    <include layout="@layout/title_bar_second"></include>
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <cn.xiaocool.dezhischool.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/second_school_news_layout"/>
+            <include layout="@layout/second_class_news_layout"/>
+            <include layout="@layout/second_school_announce_layout"/>
+            <include layout="@layout/second_message_layout"/>
+            <!--<include layout="@layout/second_message_back_layout"/>-->
+
+
+        </LinearLayout>
+    </cn.xiaocool.dezhischool.view.ReboundScrollView>
+
+
+</LinearLayout>

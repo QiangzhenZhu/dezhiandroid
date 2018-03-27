@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="themeColor">#17c76c</color>
+    <color name="main_ground_color">#eff2f7</color>
+    <color name="title_color">#ffffffff</color>
+    <color name="title_bg_color">#17c76c</color>
+    <color name="whilte">#ffffff</color>
+    <color name="thb_red">#FF0000</color>
+    <color name="thb_orange">#FD7D36</color>
+    <color name="thb_yellow">#F9B747</color>
+    <color name="color_gray3">#818181</color>
+
+    <!--fontColor-->
+    <color name="font_light">#999999</color>
+    <color name="font_common">#666666</color>
+    <color name="font_deep">#333333</color>
+    <color name="font_blue">@color/themeColor</color>
+    <color name="font_orange">#FFAA57</color>
+    <color name="font_orange_deep">#FFAA57</color>
+
+    
+
+
+    <!--常用颜色-->
+    <color name="red">#eb382f</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green">#34be67</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2db3f8</color>
+
+    <!--背景颜色-->
+    <color name="bg_main_gray">#f2f2f2</color>
+    <color name="bg_agree">#abe9c0</color>
+    <color name="bg_disagree">#ff962b</color>
+    <!--字体颜色-->
+    <color name="font_title_main">#000000</color>
+    <color name="font_title_minor">#737373</color>
+    <color name="font_nick_name">#1BBCDC</color>
+    <color name="font_title_third">#949294</color>
+    <color name="font_content_gray">#000000</color>
+    <color name="font_comment_gray">#696969</color>
+    <color name="font_time_gray">#8f8f8f</color>
+    <color name="font_read_gray">#ff9800</color>
+
+    <!--五项公开专栏颜色-->
+    <color name="homework_public">#FFA726</color>
+    <color name="kecheng_public">#1BBCDC</color>
+    <color name="keshi_public">#FFED26</color>
+    <color name="qimojiance_public">#26A69A</color>
+    <color name="jiejiari_public">#9CCC65</color>
+
+    <!-- 对话框dialog -->
+    <color name="remind_infomation_split_line_color">#FFE8E8E8</color>
+    <color name="remind_infomation_btn_ok_normal">#FF1B81FF</color>
+    <color name="remind_infomation_btn_ok_pressed">#FF0F4D9B</color>
+    <color name="remind_infomation_btn_ok_disable">#FF888888</color>
+    <color name="remind_infomation_bg_color">#FFFFFFFF</color>
+    <drawable name="color_user_item_normal">#FFFFFFFF</drawable>
+    <drawable name="color_user_item_pressed">#FFDDDDDD</drawable>
+
+    <color name="zsq_bg_color">#f2f2f2</color>
+    <color name="zsq_bg2_color">#E6E6E6</color>
+    <color name="zsq_text_gray_color">#949294</color>
+    <color name="zsq_select_gray">#e1e1e1</color>
+
+    <!--首页颜色-->
+    <color name="orange">#FFA500</color>
+    <color name="gray">#b3b3b3</color>
+    <color name="gray2">#e5e5e5</color>
+    <color name="color_home_text">#000000</color>
+    <color name="default_text">#ff454545</color>
+    <color name="default_desc">#ff747474</color>
+    <color name="default_desc_night">#ff505050</color>
+    <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_focused_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_drag_stroke_night">#ff464646</color>
+    <color name="subscribe_item_drag_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_focused_bg_night">#ff252525</color>
+    <color name="subscribe_item_focused_stroke_night">#ff464646</color>
+    <color name="subscribe_item_selected_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+    <color name="subscribe_item_disabled_bg_night">#ff2b2b2b</color>
+    <item name="subscribe_item_disabled_stroke_night" type="color">@color/subscribe_item_focused_stroke_night</item>
+    <item name="subscribe_item_pressed_bg_night" type="color">@color/subscribe_item_disabled_bg_night</item>
+    <item name="subscribe_item_pressed_stroke_night" type="color">@color/subscribe_item_focused_stroke_night</item>
+    <item name="subscribe_item_normal_bg_night" type="color">@color/subscribe_item_focused_bg_night</item>
+    <item name="subscribe_item_normal_stroke_night" type="color">@color/subscribe_item_focused_stroke_night</item>
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+
+    <!--list颜色-->
+    <color name="list_title_color">#0d0d0d</color>
+    <color name="list_content_color">#262626</color>
+    <color name="list_time_color">#979995</color>
+    <color name="list_remark_color">#515050</color>
+
+
+    <color name="quality_focused_color">#448cf3</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="dark_bg_70p">#bb000000</color>
+
+    <!-- Common -->
+    <color name="lc_bg_color">#efeff4</color>
+    <color name="lc_media_color">#000000</color>
+    <!-- Title -->
+    <color name="title_color_background">#FFFFFF</color>
+    <color name="title_color_divider">#CFCFCF</color>
+    <color name="title_color_center">#505166</color>
+    <!-- Metting -->
+    <color name="meeting_state_will">#14C56A</color>
+    <color name="meeting_state_over">#DCDADA</color>
+    <color name="meeting_state_now">#FF7472</color>
+    <color name="leave_state_wait">#FFA42F</color>
+    <color name="leave_state_refuse">#FF5F5F</color>
+    <color name="leave_state_agree">#14C56A</color>
+
+</resources>

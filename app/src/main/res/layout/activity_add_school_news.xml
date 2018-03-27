@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/addsn_tv_choose_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="选择接收班级"
+                    android:textColorHint="@color/black"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/font_title_main"
+                    android:textColor="@color/font_title_main"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_select_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_arrow_right" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <include layout="@layout/divider_line_10"/>
+
+            <EditText
+                android:id="@+id/addsn_content"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="消息内容输入"
+                android:textSize="@dimen/font_title_minor"
+                android:textColor="@color/font_title_minor"
+                android:padding="10dip"></EditText>
+
+            <include layout="@layout/divider_line_half"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@color/white">
+                <cn.xiaocool.dezhischool.view.NoScrollGridView
+                    android:id="@+id/addsn_pic_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="3dp"
+                    android:verticalSpacing="3dp"
+                    android:numColumns="4">
+
+                </cn.xiaocool.dezhischool.view.NoScrollGridView>
+
+
+            </RelativeLayout>
+
+
+           <include layout="@layout/divider_line_10"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

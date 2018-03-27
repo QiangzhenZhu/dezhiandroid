@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_profile_dormitory_absent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_absent_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="杨白昆"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_dormitory_absent"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_dormitory_absent" />
+
+    <TextView
+        android:id="@+id/tv_absent_dormitory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="201室"
+        android:textColor="@color/title_bg_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_absent_student_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_absent_student_name" />
+
+    <TextView
+        android:id="@+id/tv_absent_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="高一6班"
+        android:textColor="@color/title_bg_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_absent_dormitory"
+        app:layout_constraintTop_toTopOf="@+id/tv_absent_dormitory" />
+
+    <TextView
+        android:id="@+id/tv_absent_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="缺勤"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_absent_student_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_absent_dormitory" />
+
+    <TextView
+        android:id="@+id/tv_absent_replen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:text="补签"
+        android:textColor="@color/absent_dormitory_reply"
+        android:background="@drawable/drawable_absent_dormitory_reply"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="50dp">
+            <View
+                android:id="@+id/anchor"
+                android:layout_width="1dp"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/rl_last"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/last_month"
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_arrow_left"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/year_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016年6月"
+                    android:textSize="16sp"
+                    android:textColor="@color/themeColor"
+                    android:layout_margin="10dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_next"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/next_month"
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_arrow_right"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/themeColor"
+            app:tabMode="scrollable"
+
+            app:tabSelectedTextColor="@color/themeColor"
+            app:tabTextColor="#000000">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<ListView-->
+            <!--android:id="@+id/attance_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:divider="@color/bg_main_gray">-->
+
+        <!--</ListView>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
